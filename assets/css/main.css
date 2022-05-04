@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+:root {
+  --light-theme-background-color: #fff;
+  --light-theme-font-color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--light-theme-background-color);
+  color: var(--light-theme-font-color);
+  font-size: 1em;
+  font-family: "Segoe UI", "SegoeUI", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1.5em;
+}
+
+header img[type*="svg"] {
+  max-width: 142px;
+  height: 30px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+article {
+  padding: 0 2em;
+  max-width: 800px;
+}
+
+article img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+figure {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 1.2em;
+}
+
+h1 {
+  line-height: 1.2;
+  margin-bottom: 0.4em;
+}
+
+address {
+  color: #0067b8;
+  font-style: normal;
+}
+
+a:link:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  padding: 0.5em 1em;
+  margin: 1.5em 0 0.5em;
+  font-size: 1em;
+  background-color: #0067b8;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #005da6;
+}
+
+button:focus {
+  outline: 2px dashed #000 !important;
+}
+
+button:hover address, button:focus address {
+  box-shadow: 0 3px 0 -1px currentColor;
+}
